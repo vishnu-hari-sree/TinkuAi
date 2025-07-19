@@ -1,0 +1,174 @@
+🌐 Project Title:
+TinkerPulse – Empowering Student-Led Communities
+
+🎯 Objective:
+To create a cross-platform, responsive website that empowers student communities by streamlining event planning, avoiding scheduling conflicts, analyzing participation trends, and using AI to improve future event strategies.
+
+🏛️ Core Modules & Feature Breakdown:
+1. 🌟 Community Home Page
+Purpose: Landing page for each campus community
+
+Features:
+
+Campus logo & description
+
+Total number of events conducted
+
+Total participants count
+
+Community size (members count)
+
+Activity categories (talks, workshops, hackathons, etc.)
+
+List of recent/past events with cards
+
+Option to switch between campuses (if multi-campus)
+
+Hero banner with mission statement
+
+Admin Control:
+
+Update campus information
+
+Upload images and banners
+
+Update member count and team categories
+
+2. 🔐 Campus Lead Login System
+Authentication via Supabase:
+
+Email/password login
+
+Supabase Auth for secure sign-in
+
+Access Control:
+
+Only authorized campus leads can upload/manage events
+
+Admin can assign campus lead roles
+
+3. 📋 Event Upload Dashboard
+Form Fields:
+
+Event Name
+
+Description
+
+Program Type (Talk, Workshop, Hackathon, etc.)
+
+Mode: Online/Offline
+
+Participant Count
+
+Expense (INR)
+
+Rating (1-5 stars)
+
+Date & Time
+
+Upload 3 images (stored via Supabase Storage)
+
+Backend:
+
+Event data stored in Supabase PostgreSQL
+
+Date checks to prevent overlaps
+
+4. 📅 Interactive Event Calendar
+Features:
+
+Monthly view with clickable events
+
+Add/view/edit events via modals
+
+Color-coded by event type
+
+Prevent scheduling conflicts
+
+Tooltip preview on hover
+
+Tools: React Big Calendar or FullCalendar + Supabase
+
+5. 🤖 AI Event Planning Chatbot
+UI: Chat window floating on dashboard
+
+Capabilities:
+
+Suggest events based on past data
+
+Plan event structures (timing, logistics)
+
+Predict student interest
+
+Prompts:
+
+“Plan a 2-day offline hackathon in September”
+
+“Suggest events that work well in March”
+
+Optional: Use Supabase Edge Functions to call OpenAI API
+
+6. 📊 Event Analytics Dashboard
+Visualizations:
+
+Pie chart for event types
+
+Bar chart for participants by month
+
+Line graph for expense trends
+
+Table of top-rated events
+
+Tools: Recharts or Chart.js with Tailwind integration
+
+7. 🧠 Bonus Features (Optional)
+Student Interest Form:
+
+Collect preferred topics, modes, timings
+
+Store for analytics/AI suggestions
+
+Admin Panel:
+
+Manage team roles: Designer, Tech, Content, Outreach
+
+Track volunteer contributions
+
+Event Reminders/Notifications:
+
+Email or in-site notifications
+
+Upcoming event alerts for campus leads
+
+💡 Community Dashboard Overview:
+Metrics:
+
+Total events conducted
+
+Events this month
+
+Active members
+
+Event types hosted
+
+Recent Activity Feed:
+
+Newly uploaded events
+
+Changes in member count
+
+Team Management:
+
+View member roles
+
+Assign teams (Tech, Content, Design)
+
+Quick Links:
+
+“Upload New Event”
+
+“View Calendar”
+
+“Analytics Panel”
+
+“Chatbot Assistant”

@@ -121,7 +121,7 @@ export default function AIChatbot() {
 
       {/* Chat Window */}
       <Card className={cn(
-        "absolute bottom-16 right-0 w-80 shadow-xl transition-all duration-300 ease-in-out",
+        "absolute bottom-16 right-0 w-[28rem] shadow-xl transition-all duration-300 ease-in-out",
         isOpen ? "scale-100 opacity-100 translate-y-0" : "scale-95 opacity-0 translate-y-4 pointer-events-none"
       )}>
         <CardHeader className="bg-primary-600 text-white rounded-t-lg">

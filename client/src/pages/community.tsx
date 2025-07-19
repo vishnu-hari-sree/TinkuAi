@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "@/lib/auth";
-import { Users, Settings, Camera, MapPin, Calendar, TrendingUp } from "lucide-react";
+import { Users, Settings, Camera, MapPin, School, TrendingUp } from "lucide-react";
 import { useState } from "react";
 
 export default function Community() {
@@ -78,7 +78,7 @@ export default function Community() {
           <div 
             className="h-48 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-lg relative overflow-hidden"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400')",
+              backgroundImage: "url('https://www.nssce.ac.in/assets/images/dept_pe.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}
@@ -87,7 +87,7 @@ export default function Community() {
             <div className="relative p-6 text-white flex items-end h-full">
               <div className="flex items-center space-x-4">
                 <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
-                  <Calendar className="h-8 w-8 text-primary-600" />
+                  <School className="h-8 w-8 text-primary-600" />
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold">{campus?.name || "Campus Name"}</h2>
@@ -240,7 +240,7 @@ export default function Community() {
             
             {events.length === 0 && (
               <div className="text-center py-8">
-                <Calendar className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                <School className="h-12 w-12 text-gray-400 mx-auto mb-4" />
                 <h3 className="text-lg font-medium text-gray-900 mb-2">No recent activity</h3>
                 <p className="text-gray-500">Recent events and updates will appear here</p>
               </div>

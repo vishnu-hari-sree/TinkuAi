@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Users, TrendingUp, Star, Plus, BarChart3, Mic, Wrench, Code, Network } from "lucide-react";
+import { School, Users, TrendingUp, Star, Plus, BarChart3, Mic, Wrench, Code, Network } from "lucide-react";
 import { useAuth } from "@/lib/auth";
 import EventUploadModal from "@/components/events/event-upload-modal";
 import { useState } from "react";
@@ -89,7 +89,7 @@ export default function Dashboard() {
           <div 
             className="h-48 bg-gradient-to-r from-primary-600 to-secondary-600 relative"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400')",
+              backgroundImage: "url('https://www.nssce.ac.in/assets/images/dept_pe.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}
@@ -98,7 +98,7 @@ export default function Dashboard() {
             <div className="relative p-6 text-white">
               <div className="flex items-center space-x-4">
                 <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
-                  <Calendar className="h-8 w-8 text-primary-600" />
+                  <School className="h-8 w-8 text-primary-600" />
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold">{campus?.name || "Loading..."}</h1>
@@ -168,8 +168,8 @@ export default function Dashboard() {
                 Upload New Event
               </Button>
               <Button variant="outline" className="w-full">
-                <Calendar className="h-4 w-4 mr-2" />
-                View Calendar
+                <School className="h-4 w-4 mr-2" />
+                View School
               </Button>
               <Button variant="outline" className="w-full">
                 <BarChart3 className="h-4 w-4 mr-2" />
@@ -240,7 +240,7 @@ export default function Dashboard() {
             ))
           ) : (
             <div className="col-span-full text-center py-12">
-              <Calendar className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+              <School className="h-12 w-12 text-gray-400 mx-auto mb-4" />
               <h3 className="text-lg font-medium text-gray-900 mb-2">No events yet</h3>
               <p className="text-gray-500 mb-4">Start by creating your first event to see it here.</p>
               <Button onClick={() => setShowEventModal(true)}>
